@@ -1,0 +1,25 @@
+.app{
+  padding-bottom: 166px;
+  &__content{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__info{
+    &-title{
+      @include text(500,36px,50px);
+      text-transform: capitalize;
+      color: #363853;
+      padding-bottom: 30px;
+    }
+    &-desc{
+      @include text(400,20px,30px);
+      color: #36385390;
+    }
+  }
+  &__btn{
+    display: flex;
+    column-gap: 35px;
+    padding-top: 30px;
+  }
+}

@@ -1,0 +1,37 @@
+.food{
+  padding-bottom: 165px;
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+    margin-top: 50px;
+  }
+  &__card{
+    width: calc(33.33333% - 28px);
+    &-img{
+      width: 361px;
+      height: 299px;
+    }
+    &-title{
+      @include text(400,24px,30px);
+      color: #363853;
+      padding: 22px 0 14px 20px;
+    }
+    &-bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 39px 22px 21px;
+      @include text(300,18px,30px);
+      color: #36385390;
+    }
+    &-btn{
+      padding: 11px 32px 10px 33px;
+      background: #FF7A50;
+      box-shadow: 0 5px 12px rgba(255, 104, 56, 0.19);
+      border-radius: 20px 20px 0 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
