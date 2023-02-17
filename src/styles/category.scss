@@ -6,7 +6,7 @@
     margin: 55px 0 40px;
   }
   &__tab{
-    width: 20%;
+    width: calc(20% - 20.8px);
     background: #FFFFFF;
     border-radius: 8px;
     padding: 14px 30px;
@@ -85,3 +85,28 @@
   }
 }
 
+@media (max-width: 886px) {
+  .category__tab{
+    padding: 15px 12px;
+  }
+}
+@media (max-width: 768px) {
+  .category__tab{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .category__span{
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .category__list{
+    column-gap: 15px;
+  }
+  .category__tab{
+    width: calc(20% - 12px);
+  }
+}

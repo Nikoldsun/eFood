@@ -5,6 +5,20 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 2000
     },
+    breakpoints: {
+      320 : {
+          slidesPerView: 2
+      },
+        426 : {
+          slidesPerView: 3
+        },
+        500 : {
+          slidesPerView: 4
+        },
+      768 : {
+        slidesPerView: 5
+      },
+    },
     speed: 2500
 });
 
@@ -52,4 +66,12 @@ btnRegister.addEventListener('click', () => {
 
 poupClose.addEventListener('click', () => {
     overlay.style.display = 'none'
+})
+
+let burger = document.querySelector('.burger')
+let menu = document.querySelector('.header__menu')
+
+burger.addEventListener("click" , () => {
+    menu.classList.toggle('active')
+    burger.classList.toggle('active')
 })
